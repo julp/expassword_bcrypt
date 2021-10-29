@@ -71,7 +71,7 @@ defmodule ExPassword.Bcrypt.MixProject do
 
   defp package() do
     [
-      files: ~W[lib src openbsd mix.exs README*],
+      files: ~W[lib src mix.exs README*],
       licenses: ~W[BSD],
       links: %{"GitHub" => "https://github.com/julp/expassword_bcrypt"},
     ]
