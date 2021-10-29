@@ -28,16 +28,15 @@ end
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc) and published on [HexDocs](https://hexdocs.pm). Once published, the docs can be found at [https://hexdocs.pm/expassword_bcrypt](https://hexdocs.pm/expassword_bcrypt).
 
-## Configuration
+## Options
 
-Default values are:
+Reasonable *options* are:
 
 ```elixir
-config :expassword_bcrypt,
+%{
   # the algorithmic cost, defines the number of iterations
-  cost: 10
+  cost: 10,
+}
 ```
 
-Of course, you can override them in your config/*.exs
-
-In fact, you should lower these values in config/test.exs to speed up your tests.
+(you should lower these values in config/test.exs to speed up your tests)
