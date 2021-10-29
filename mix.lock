@@ -1,0 +1,4 @@
+%{
+  "earmark": {:hex, :earmark, "1.4.17", "f41cdbfab6bdd29fb1cf5fe49a631d3dd5457c947386771bb3f129a8510fce6d", [:mix], [{:earmark_parser, ">= 1.4.16", [hex: :earmark_parser, repo: "hexpm", optional: false]}], "hexpm", "4928fb05d00b79675355564774c33d463b0843b0c0bdfa33842c1362ee21509a"},
+  "ex_doc": {:hex, :ex_doc, "0.25.5", "ac3c5425a80b4b7c4dfecdf51fa9c23a44877124dd8ca34ee45ff608b1c6deb9", [:mix], [{:earmark_parser, "~> 1.4.0", [hex: :earmark_parser, repo: "hexpm", optional: false]}, {:makeup_elixir, "~> 0.14", [hex: :makeup_elixir, repo: "hexpm", optional: false]}, {:makeup_erlang, "~> 0.1", [hex: :makeup_erlang, repo: "hexpm", optional: false]}], "hexpm", "688cfa538cdc146bc4291607764a7f1fcfa4cce8009ecd62de03b27197528350"},
+}
