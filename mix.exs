@@ -16,6 +16,7 @@ defmodule Mix.Tasks.Compile.BcryptCmake do
       {result, 0} = System.cmd(cmd, args, stderr_to_stdout: true)
       Mix.shell.info(result)
     end
+    Mix.Project.build_structure()
     :ok
   end
 end
@@ -26,7 +27,7 @@ defmodule ExPassword.Bcrypt.MixProject do
   def project do
     [
       app: :expassword_bcrypt,
-      version: "0.2.0",
+      version: "0.2.1",
       elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: ~W[bcryptCmake]a ++ Mix.compilers(),
