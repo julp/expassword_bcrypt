@@ -126,7 +126,7 @@ EXPORT_IF_STANDALONE uint8_t *decode_base64(const uint8_t *data, const uint8_t *
     state = 0;
     for (w = buffer, r = data; r < data_end && w < buffer_end; r++) {
         if (3 != state) {
-            int x, y;
+            int y;
             uint8_t c1, c2;
 
             c1 = index_64[r[0]];
@@ -136,7 +136,7 @@ EXPORT_IF_STANDALONE uint8_t *decode_base64(const uint8_t *data, const uint8_t *
                 return NULL;
             }
             y = (state + 1) << 1;
-            x = 8 - y;
+            //x = 8 - y;
             *w++ = (c1 & (0xFF >> y)) << y | (c2 >> (6 - y));
         }
         state = states[state];
