@@ -48,6 +48,7 @@ void tearDown(void) {
 static size_t i;
 static const uint8_t *p;
 
+#if 0
 static void print_raw_salt(const uint8_t *raw_salt, const uint8_t * const raw_salt_end)
 {
     const uint8_t *r;
@@ -57,6 +58,7 @@ static void print_raw_salt(const uint8_t *raw_salt, const uint8_t * const raw_sa
     }
     printf("\n");
 }
+#endif
 
 static void erase_buffer(uint8_t *buffer, const uint8_t * const buffer_end)
 {
