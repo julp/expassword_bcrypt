@@ -7,7 +7,7 @@ defmodule ExPassword.Bcrypt.Base do
   def load_nifs do
     :expassword_bcrypt
     |> :code.priv_dir()
-    |> :filename.join('bcrypt_nif')
+    |> :filename.join(~C'bcrypt_nif')
     |> :erlang.load_nif(0)
     |> case do
       :ok ->
