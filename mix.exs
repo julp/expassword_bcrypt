@@ -27,7 +27,7 @@ defmodule ExPassword.Bcrypt.MixProject do
   def project do
     [
       app: :expassword_bcrypt,
-      version: "0.2.1",
+      version: "0.2.2",
       elixir: "~> 1.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: ~W[bcryptCmake]a ++ Mix.compilers(),
